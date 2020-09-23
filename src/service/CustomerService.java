@@ -26,7 +26,7 @@ public class CustomerService {
 	
 	public Customer findCustomer(String id) {
 		if(id != null)
-			return(customers.get(id.toLowerCase()));
+			return(customers.get(id));//대문자 구분하기 위해 LowerCase 제거
 		else
 			return null;
 	}
